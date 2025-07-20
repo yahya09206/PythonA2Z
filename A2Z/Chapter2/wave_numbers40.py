@@ -25,3 +25,6 @@ for i in range(0, 2):
     for j in range(1,11):
         print(j%10, end='')
         print(j%10, end='')
+print()
+for i in range(1, 41):
+    print("-", end='')
