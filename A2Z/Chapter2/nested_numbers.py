@@ -19,8 +19,7 @@ for(int i = 1; i <= 3; i++){
 for i in range(0, 3):
     # range of numbers from 0-10
     for j in range(0, 10):
-        for k in range(j, i):
-            print(k%10, end='')
+        # amount of times to print each number
+        for k in range(0, 3):
             print(j, end='')
-        print(j, end='')
     print()
