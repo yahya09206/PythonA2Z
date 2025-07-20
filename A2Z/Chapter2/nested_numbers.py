@@ -17,9 +17,10 @@ for(int i = 1; i <= 3; i++){
 
 # print 3 rows of numbers
 for i in range(0, 3):
+    # range of numbers from 0-10
     for j in range(0, 10):
-        for k in range(j, j):
-            print(k%10)
-            print(j)
+        for k in range(j, i):
+            print(k%10, end='')
+            print(j, end='')
         print(j, end='')
     print()
