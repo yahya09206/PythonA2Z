@@ -1,12 +1,14 @@
-to_seconds = 24 * 60 * 60
-name_of_units = "seconds"
+to_seconds = 24
+name_of_units = "hours"
 
 def days_to_units(num_of_days: int):
-    print(f"{num_of_days} days are {20 * to_seconds} {name_of_units}")
+    return f"{num_of_days} days are {num_of_days * to_seconds} {name_of_units}"
 
 
-days_to_units(20)
-days_to_units(35)
-days_to_units(50)
-days_to_units(100)
+# accept user input
+user_input = input("Hey user, enter a number of days and I will convert it to seconds!\n")
+user_input_number = int(user_input)
+
+calculated_value = days_to_units(user_input_number)
+print(calculated_value)
 
