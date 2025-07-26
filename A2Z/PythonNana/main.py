@@ -2,7 +2,12 @@ to_seconds = 24
 name_of_units = "hours"
 
 def days_to_units(num_of_days: int):
-    return f"{num_of_days} days are {num_of_days * to_seconds} {name_of_units}"
+    if num_of_days > 0:
+        return f"{num_of_days} days are {num_of_days * to_seconds} {name_of_units}"
+    elif num_of_days == 0:
+        return "you entered a 0, please enter a valid positive number"
+    else:
+        return "you entered a negative value, so no conversion for you"
 
 
 # accept user input
