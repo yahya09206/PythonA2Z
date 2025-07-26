@@ -21,7 +21,8 @@ def validate_and_execute():
 
 
 # accept user input
-user_input = input("Hey user, enter a number of days and I will convert it to seconds!\n")
-validate_and_execute()
+while user_input != "exit":
+    user_input = input("Hey user, enter a number of days and I will convert it to seconds!\n")
+    validate_and_execute()
 
 
