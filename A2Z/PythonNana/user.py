@@ -9,5 +9,14 @@ class User:
         self.password = new_password
 
     def change_job_title(self, new_job_title):
-        self.password = new_job_title
+        self.current_job_title = new_job_title
 
+    def get_user_info(self):
+        print(f"User {self.name} currently works as a {self.current_job_title}. You can contact them at {self.email}")
+
+
+app_user_one = User("email@email.com", "johnny bravo", "hubba", "body builder")
+app_user_one.get_user_info()
+
+app_user_one.change_job_title("trainer")
+app_user_one.get_user_info()
