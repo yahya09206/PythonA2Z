@@ -23,7 +23,7 @@ user_input = ""
 # accept user input
 while user_input != "exit":
     user_input = input("Hey user, enter a number of days and I will convert it to seconds!\n")
-    list_of_days = user_input.split(",")
+    list_of_days = user_input.split(", ")
 
     print(list_of_days)
     print(set(list_of_days))
