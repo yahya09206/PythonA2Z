@@ -8,18 +8,18 @@ def days_to_units(num_of_days: int):
 def validate_and_execute():
     try:
 
-        if user_input.isdigit():
             user_input_number = int(user_input)
             if user_input_number > 0:
                 calculated_value = days_to_units(user_input_number)
                 print(calculated_value)
             elif user_input_number == 0:
                 print("you entered a 0, pleaser enter a valid positive number")
-
+            else:
+                print("you entered a negative number: please enter a positive number")
     except ValueError:
             print("your input is not a valid number, Don't ruin my program!")
 
-
+user_input = ""
 # accept user input
 while user_input != "exit":
     user_input = input("Hey user, enter a number of days and I will convert it to seconds!\n")
