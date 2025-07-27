@@ -46,3 +46,11 @@ def three_sum(num1, num2, num3):
 
 two_sum(7,10)
 three_sum(3,5,6)
+
+print("------------------------------")
+#functions with return statements
+def product(num1:int, num2:int) -> int:
+    return num1 * num2
+
+print(product(8,8))
+
