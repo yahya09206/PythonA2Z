@@ -24,3 +24,10 @@ print("------------------------")
 # wrap above into a function
 for i in reversed(range(10, 21)):
     print(i, end=' ')
+
+print()
+print("------------------------")
+# nested loop
+for i in range(3,6):
+    for j in range(3,6):
+        print(i, j)
