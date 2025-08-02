@@ -3,3 +3,4 @@ def print_string_character(my_string: str) -> None:
         print(my_string[i])
 
 print_string_character("Hello, World!")
+print_string_character("Good Job!")
