@@ -1,9 +1,9 @@
 def get_substring(input_string: str, start: int, end: int) -> str:
 
-    if end > len(input_string) - 1:
+    if end > len(input_string):
         return ""
     else:
         return input_string[start:end]
 
 
-print(get_substring("Hello world!", 1,4))
+print(get_substring("Hello world!", 0,12))
