@@ -1,6 +1,6 @@
 def get_substring(input_string: str, start: int, end: int) -> str:
 
-    if end == -1:
+    if end > len(input_string) - 1:
         return ""
     else:
         return input_string[start:end]
