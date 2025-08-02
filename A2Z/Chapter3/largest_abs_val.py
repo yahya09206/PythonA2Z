@@ -1,14 +1,11 @@
 """
-Write a method called largerAbsVal that takes two integers as parameters and returns the larger of the two absolute values.
-A call of largerAbsVal(11, 2) would return 11, and a call of largerAbsVal(4, -5) would return 5.
+Write a method largestAbsVal that accepts three integers as parameters and returns the largest of their three absolute values.
+For example, a call of largestAbsVal(7, -2, -11) would return 11, and a call of largestAbsVal(-4, 5, 2) would return 5.
 
 """
-import math
+def largest_abs_val(a: int, b: int, c: int) -> int:
+    return max(abs(a),abs(b), abs(c))
 
 
-def larger_abs_val(a: int, b: int) -> int:
-    return max(abs(a),abs(b))
-
-
-print(larger_abs_val(11, 2))
-print(larger_abs_val(4, -5))
+print(largest_abs_val(7, -2, -11))
+print(largest_abs_val(-4, 5, 2))
