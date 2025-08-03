@@ -1,7 +1,7 @@
 from typing import List
 
 def get_min(nums: List[int]) -> int:
-    min = float('inf')
+    min = nums[0] # or set this value to first index in list
     for n in nums:
         if n < min:
             min = n
