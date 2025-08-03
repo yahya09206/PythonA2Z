@@ -4,7 +4,6 @@ from typing import List
 def count_x(nums: List[int], x: int) -> int:
 
     count = 0
-    length = len(nums)
     for n in nums:
         if n == x:
             count += 1
