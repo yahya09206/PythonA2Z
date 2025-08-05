@@ -4,10 +4,10 @@ def remove_from_list(my_list: List[int], index: int) -> List[int]:
     my_list.pop(index)
     return my_list
 
-
+# pop specific item from list
 def pop_n_from_list(my_list: List[int], n: int) -> List[int]:
     while n > 0:
-        my_list.pop()
+        my_list.pop(n)
         n -= 1
     return my_list
 
