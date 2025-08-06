@@ -2,7 +2,7 @@ from typing import List
 
 
 def get_sum(nums: List[int]) -> int:
-    total_sum = 0;
+    total_sum = 0
     for i in nums:
         total_sum += i
     return total_sum
