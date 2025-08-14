@@ -4,6 +4,7 @@ def move_zeroes_to_right(nums):
     left = 0
     for right in range(len(nums)):
         if nums[right] != 0:
+            # used when tuples are involved for strict comparison
             # nums[left], nums[right] = nums[right], nums[left]
             temp = nums[right]
             nums[left] = nums[right]
