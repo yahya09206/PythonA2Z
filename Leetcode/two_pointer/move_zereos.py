@@ -2,6 +2,7 @@ from typing import List
 def move_zeroes_to_right(nums):
 
     left = 0
+    # loop through list
     for right in range(len(nums)):
         if nums[right] != 0:
             # used when tuples are involved for strict comparison
