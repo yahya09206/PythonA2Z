@@ -13,6 +13,7 @@ def move_zeroes_to_right(nums):
             left += 1
 
 
+# list of nums
 nums = [1, 0, 2, 0, 3, 4, 0, 5, 6]
 move_zeroes_to_right(nums)
 print(nums)
