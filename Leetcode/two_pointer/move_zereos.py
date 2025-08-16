@@ -7,12 +7,10 @@ def move_zeroes_to_right(nums):
         if nums[right] != 0:
             # used when tuples are involved for strict comparison
             # nums[left], nums[right] = nums[right], nums[left]
-            temp = nums[left]
-            nums[left] = nums[right]
-            nums[right] = temp
+            temp = nums[right]
+            nums[right] = nums[left]
+            nums[left] = temp
             left += 1
-            right -= 1
-
 
 # list of nums
 nums = [1, 0, 2, 0, 3, 4, 0, 5, 6]
