@@ -7,6 +7,7 @@ def reverse_list(arr: List[int]) -> List:
     r = len(arr) - 1
 
     while l < r:
+        # can also use tuple unpacking to swap -> arr[l], arr[r] = arr[r], arr[l]
         temp = arr[l]
         arr[l] = arr[r]
         arr[r] = temp
