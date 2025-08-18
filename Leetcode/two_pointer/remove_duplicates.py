@@ -5,6 +5,7 @@ def removed_duplicates(nums: List[int]) -> int:
 
     l = 0
 
+    # loop through list
     for r in range(len(nums)):
         if nums[r] != nums[l]:
             nums[l + 1] = nums[r]
