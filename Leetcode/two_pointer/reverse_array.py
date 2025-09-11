@@ -1,4 +1,6 @@
-def reverse_array(arr: int) -> int:
+from typing import List
+
+def reverse_array(arr: List[int]) -> List:
 
     l = 0
     r = len(arr) - 1
@@ -8,4 +10,6 @@ def reverse_array(arr: int) -> int:
         arr[l] = arr[r]
         arr[r] = temp
         l += 1
-        r += 1
+        r -= 1
+    return arr
+
