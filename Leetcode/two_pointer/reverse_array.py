@@ -13,3 +13,4 @@ def reverse_array(arr: List[int]) -> List:
         r -= 1
     return arr
 
+print(reverse_array([1, 2, 3, 4, 5]))
