@@ -7,3 +7,5 @@ def reverse_array(arr: int) -> int:
         temp = arr[l]
         arr[l] = arr[r]
         arr[r] = temp
+        l += 1
+        r += 1
