@@ -1,1 +1,2 @@
-def reverse_array(arr):
+def reverse_array(arr: int) -> int:
+
