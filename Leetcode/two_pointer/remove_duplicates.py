@@ -7,6 +7,7 @@ def removed_duplicates(nums: List[int]) -> int:
 
     # loop through list and compare indices
     for r in range(len(nums)):
+        # check if left is equal to rightg
         if nums[r] != nums[l]:
             nums[l + 1] = nums[r]
             l += 1
