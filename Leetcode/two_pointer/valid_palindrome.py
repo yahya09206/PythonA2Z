@@ -8,5 +8,7 @@ def valid_palindrome(self, s: str) -> bool:
         char_left = s[l]
         char_right = s[r]
 
-        if not char_right.isalnum():
+        if not char_left.isalnum():
             l += 1
+        elif not char_right.isalnum():
+            r -= 1
