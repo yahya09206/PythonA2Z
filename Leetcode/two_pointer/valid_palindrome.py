@@ -12,3 +12,5 @@ def valid_palindrome(self, s: str) -> bool:
             l += 1
         elif not char_right.isalnum():
             r -= 1
+        elif char_left.lower() != char_right.lower():
+            return False
