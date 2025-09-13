@@ -7,3 +7,6 @@ def valid_palindrome(self, s: str) -> bool:
 
         char_left = s[l]
         char_right = s[r]
+
+        if not char_right.isalnum():
+            l += 1
