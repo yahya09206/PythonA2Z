@@ -31,3 +31,7 @@ def container_with_most(height: List[int]) -> int:
         else:
             r -= 1
     return res
+
+
+print(container_with_most([1, 8, 6, 2, 5, 4, 8, 3, 7]))
+print(container_with_most([1, 1]))
