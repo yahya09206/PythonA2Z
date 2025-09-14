@@ -7,6 +7,7 @@ init left and right pointer
 while l < r:
 compute the area:
 area = (r-l) * min(height[l], height[r])
+set res to max between current res and current area
 
 increment left pointer if height[l] is greater than height[r]
 
@@ -23,6 +24,10 @@ def container_with_most(height: List[int]) -> int:
 
     while l < r:
         area = (r - l) * min(height[l], height[r])
+        res = max(res, area)
 
         if height[l] > height[r]:
             l += 1
+        else:
+            r -= 1
+    return res
