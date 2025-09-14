@@ -16,3 +16,7 @@ return res
 """
 from typing import List
 def container_with_most(height: List[int]) -> int:
+
+    res = 0
+    l = 0
+    r = len(height) - 1
