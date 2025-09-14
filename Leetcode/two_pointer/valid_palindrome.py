@@ -1,4 +1,4 @@
-def valid_palindrome(self, s: str) -> bool:
+def valid_palindrome(s: str) -> bool:
 
     l = 0
     r = len(s) - 1
@@ -26,3 +26,7 @@ def valid_palindrome(self, s: str) -> bool:
     # All characters have been checked and are equal, so it's a
     # palindrome
     return True
+
+
+print(valid_palindrome("A man, a plan, a canal: Panama"))
+print(valid_palindrome("race a car"))
