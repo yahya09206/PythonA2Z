@@ -22,3 +22,7 @@ def container_with_most(height: List[int]) -> int:
     r = len(height) - 1
 
     while l < r:
+        area = (r - l) * min(height[l], height[r])
+
+        if height[l] > height[r]:
+            l += 1
