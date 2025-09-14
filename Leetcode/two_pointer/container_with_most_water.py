@@ -20,3 +20,5 @@ def container_with_most(height: List[int]) -> int:
     res = 0
     l = 0
     r = len(height) - 1
+
+    while l < r:
