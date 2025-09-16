@@ -11,7 +11,7 @@ def remove_duplicates_from_sorted_array(nums: List[int]) -> int:
     return l
 
 
-remove_duplicates_from_sorted_array([1,1,2])
-remove_duplicates_from_sorted_array([0,0,1,1,1,2,2,3,3,4])
+print(remove_duplicates_from_sorted_array([1, 1, 2]))
+print(remove_duplicates_from_sorted_array([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
 
 
