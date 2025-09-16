@@ -8,9 +8,10 @@ def remove_duplicates_from_sorted_array(nums: List[int]) -> int:
         if nums[r] != nums[r - 1]:
             nums[l] = nums[r]
             l += 1
-        return l
+    return l
 
 
-
+remove_duplicates_from_sorted_array([1,1,2])
+remove_duplicates_from_sorted_array([0,0,1,1,1,2,2,3,3,4])
 
 
