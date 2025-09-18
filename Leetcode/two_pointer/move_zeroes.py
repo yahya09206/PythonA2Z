@@ -14,3 +14,6 @@ def move_zeroes(nums: List[int]) -> None:
 
 
 
+nums = [0,1,0,3,12]
+move_zeroes(nums)
+print(nums)
