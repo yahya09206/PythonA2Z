@@ -8,6 +8,9 @@ def move_zeroes(nums: List[int]) -> None:
 
         if nums[r]:
             temp = nums[l]
+            nums[l] = nums[r]
+            nums[r] = temp
+            l += 1
 
 
 
