@@ -6,6 +6,7 @@ def remove_element(nums: List[int], target: int) -> int:
 
     for r in range(len(nums)):
 
+        # check if current index is equal to target
         if nums[r] != target:
             temp = nums[l]
             nums[l] = nums[r]
