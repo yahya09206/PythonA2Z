@@ -40,7 +40,12 @@ def three_sum(nums: List[int]) -> List[List[int]]:
                 # check the same for the right pointer
                 while l < r and nums[r] == nums[r + 1]:
                     r -= 1
-
+            # if sum is less than zero, move either pointer to get a bigger sum
+            elif sum < 0:
+                l += 1
+            else:
+                r -= 1
+        return result
 
 
 
