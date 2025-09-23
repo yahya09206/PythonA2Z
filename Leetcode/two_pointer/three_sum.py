@@ -10,4 +10,9 @@ def three_sum(nums: List[int]) -> List[List[int]]:
 
     result = []
 
+    for r in range(len(nums)):
+
+        if nums[r] > 0:
+            break
+
 
