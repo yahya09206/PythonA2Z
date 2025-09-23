@@ -8,4 +8,6 @@ def three_sum(nums: List[int]) -> List[List[int]]:
     # set n to length of array
     n = len(nums) - 1
 
+    result = []
+
 
