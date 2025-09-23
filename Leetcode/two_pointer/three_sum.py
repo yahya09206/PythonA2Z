@@ -11,14 +11,14 @@ def three_sum(nums: List[int]) -> List[List[int]]:
     result = []
 
     for i in range(len(nums)):
-        # break out of loop if nums[r] > 0
+        # break out of loop if first number is greater than 0
         if nums[i] > 0:
             break
         # continue loop if the previous value is the same as current value r > 0 and nums[r] == nums[r - 1]
         elif r > 0 and nums[i] == nums[i - 1]:
             continue
 
-        # set l pointer to next index
+        # set l pointer to next index or i in for loop
         l = i + 1
         # set an r pointer to the end of array
         r = n
@@ -27,6 +27,11 @@ def three_sum(nums: List[int]) -> List[List[int]]:
         while l < r:
             # calculate current sum nums[i] + nums[l] + nums[r]
             sum = nums[i] + nums[l] + nums[r]
+
+            # if sum is equal to 0 then append the values to the result array [nums[i], nums[l], nums[r]]
+            if sum == 0:
+                result.append([nums[i], nums[l], nums[r]])
+
 
 
 
