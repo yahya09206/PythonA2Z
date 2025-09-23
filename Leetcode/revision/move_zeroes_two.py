@@ -10,3 +10,5 @@ def move_zeroes_two(nums: List[int]) -> None:
             nums[l] = nums[r]
             nums[r] = temp
             l += 1
+
+nums = [0,1,0,2,3,0,11,12]
