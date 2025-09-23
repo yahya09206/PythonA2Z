@@ -6,3 +6,4 @@ def move_zeroes_two(nums: List[int]) -> None:
 
     for r in range(len(nums)):
         if nums[r]:
+            temp = nums[l]
