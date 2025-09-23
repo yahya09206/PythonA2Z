@@ -31,6 +31,16 @@ def three_sum(nums: List[int]) -> List[List[int]]:
             # if sum is equal to 0 then append the values to the result array [nums[i], nums[l], nums[r]]
             if sum == 0:
                 result.append([nums[i], nums[l], nums[r]])
+                # move pointers
+                l += 1
+                r -= 1
+                # move the left pointer by one if the previous is the same value so while l < r and nums[l] == nums[l - 1]
+                while l < r and nums[l] == nums[l - 1]:
+                    l += 1
+                # check the same for the right pointer
+                while l < r and nums[r] == nums[r + 1]:
+                    r -= 1
+
 
 
 
