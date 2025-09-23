@@ -8,3 +8,4 @@ def move_zeroes_two(nums: List[int]) -> None:
         if nums[r]:
             temp = nums[l]
             nums[l] = nums[r]
+            nums[r] = temp
