@@ -4,7 +4,7 @@ def longest_substring_without_repeating(s: str) -> int:
 
     # Creates an empty set to keep track of characters we've already seen in our current "window".
     # A set automatically prevents duplicates.
-    charSet = 0
+    charSet = set()
 
     # Sets up our left pointer at the beginning of the string (index 0). This marks the start of our current substring.
     l = 0
@@ -40,7 +40,7 @@ def longest_substring_without_repeating(s: str) -> int:
         Keep the bigger value between our old best and current length
         """
 
-        res = max(res, r - l + 1)
+        res = max(result, r - l + 1)
 
     # Return the longest substring length we found
     return result
