@@ -46,3 +46,5 @@ def longest_substring_without_repeating(s: str) -> int:
 
 
 print(longest_substring_without_repeating("abcabcbb"))
+print(longest_substring_without_repeating("bbbbb"))
+print(longest_substring_without_repeating("pwwkew"))
