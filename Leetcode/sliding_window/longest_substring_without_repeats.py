@@ -26,7 +26,11 @@ def longest_substring_without_repeating(s: str) -> int:
             charSet.remove(s[l])
             l += 1
 
-        # Add the current character to our set (now that we know it's not a duplicate)
+        """
+        Add the current character to our set (now that we know it's not a duplicate)
+    
+
+        """
         charSet.add(s[r])
 
         """
@@ -34,11 +38,12 @@ def longest_substring_without_repeating(s: str) -> int:
 
         r - l + 1 = current window size (right index - left index + 1)
         Keep the bigger value between our old best and current length
-
         """
 
-        # Return the longest substring length we found
-        return result
+        res = max(res, r - l + 1)
+
+    # Return the longest substring length we found
+    return result
 
 
 
