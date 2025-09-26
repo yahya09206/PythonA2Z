@@ -28,7 +28,6 @@ def longest_substring_without_repeating(s: str) -> int:
 
         """
         Add the current character to our set (now that we know it's not a duplicate)
-    
 
         """
         charSet.add(s[r])
