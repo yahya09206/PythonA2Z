@@ -40,15 +40,10 @@ def longest_substring_without_repeating(s: str) -> int:
         Keep the bigger value between our old best and current length
         """
 
-        res = max(result, r - l + 1)
+        result = max(result, r - l + 1)
 
     # Return the longest substring length we found
     return result
 
 
-
-
-
-
-
-
+print(longest_substring_without_repeating("abcabcbb"))
