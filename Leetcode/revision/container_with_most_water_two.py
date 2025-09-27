@@ -9,3 +9,6 @@ def container_two(height: List[int]) -> int:
 
     while l < r:
 
+        area = (l - r) * min(height[l], height[r])
+
+
