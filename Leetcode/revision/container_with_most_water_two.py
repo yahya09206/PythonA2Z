@@ -6,3 +6,6 @@ def container_two(height: List[int]) -> int:
 
     l = 0
     r = len(height) - 1
+
+    while l < r:
+
