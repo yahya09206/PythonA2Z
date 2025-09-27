@@ -9,7 +9,7 @@ def container_two(height: List[int]) -> int:
 
     while l < r:
 
-        area = (l - r) * min(height[l], height[r])
+        area = (r - l) * min(height[l], height[r])
         result = max(result, area)
 
         if height[l] <= height[r]:
@@ -17,4 +17,10 @@ def container_two(height: List[int]) -> int:
         else:
             r -= 1
 
+    return result
 
+
+
+
+print(container_two([1, 8, 6, 2, 5, 4, 8, 3, 7]))
+print(container_two([1, 1]))
