@@ -12,6 +12,6 @@ def remove_element_two(nums: List[int], target: int) -> int:
             l += 1
     return l
 
-
+# cases to test with
 print(remove_element_two([1, 2, 3, 4], 2))
 
