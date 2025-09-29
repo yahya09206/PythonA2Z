@@ -24,12 +24,4 @@ def trapping_rain_water(height: List[int]) -> int:
             right_max = max(right_max, height[r])
             result += right_max - height[r]
 
-
-
-
-
-
-
-
-
     return result
