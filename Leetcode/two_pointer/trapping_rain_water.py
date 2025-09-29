@@ -13,6 +13,11 @@ def trapping_rain_water(height: List[int]) -> int:
 
     result = 0
 
+    while l < r:
+
+        if left_max < right_max:
+
+
 
 
 
