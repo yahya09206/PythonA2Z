@@ -26,7 +26,7 @@ def trapping_rain_water(height: List[int]) -> int:
 
     return result
 
-# inputs to test
+# inputs to test with code above
 print(trapping_rain_water([0, 2, 0, 3, 1, 0, 1, 3, 2, 1]))
 print(trapping_rain_water([0,1,0,2,1,0,1,3,2,1,2,1]))
 print(trapping_rain_water([4,2,0,3,2,5]))
