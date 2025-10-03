@@ -2,6 +2,7 @@ from typing import List
 
 def trapping_rain_water(height: List[int]) -> int:
 
+    # return 0 if array is empty
     if not height:
         return 0
 
